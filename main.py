@@ -43,7 +43,7 @@ def main():
             for bullet in shots:
                 if ast.collides_with(bullet):
                     log_event("asteroid_shot")
-                    ast.kill()
+                    ast.split()
                     bullet.kill()
 
         screen.fill("black")
